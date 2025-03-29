@@ -24,8 +24,8 @@ const HeroSection = () => {
               I build things for the web.
             </h2>
             <p className="text-lg text-foreground/70 mb-8 max-w-2xl">
-              I'm a full-stack developer specializing in building exceptional
-              digital experiences. Currently, I'm focused on building
+              I&apos;m a full-stack developer specializing in building exceptional
+              digital experiences. Currently, I&apos;m focused on building
               accessible, human-centered products using modern technologies.
             </p>
 

@@ -13,20 +13,20 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-slide-in-from-left">
             <p className="text-lg mb-6 text-foreground/80">
-              Hello! I'm a passionate full-stack developer with a strong focus
+              Hello! I&apos;m a passionate full-stack developer with a strong focus
               on creating elegant, efficient, and user-friendly applications. My
-              journey in web development started 1 year ago, and I've been
+              journey in web development started 1 year ago, and I&apos;ve been
               constantly learning and growing since then.
             </p>
             <p className="text-lg mb-6 text-foreground/80">
               I specialize in modern JavaScript frameworks like Next.js, along
               with a robust tech stack including Sanity for content management,
-              PostgreSQL for database, and Clerk for authentication. I'm also
+              PostgreSQL for database, and Clerk for authentication. I&apos;m also
               proficient in TypeScript, which helps me write more reliable and
               maintainable code.
             </p>
             <p className="text-lg text-foreground/80">
-              When I'm not coding, you can find me exploring new technologies,
+              When I&apos;m not coding, you can find me exploring new technologies,
               contributing to open-source projects, or sharing my knowledge with
               the developer community.
             </p>

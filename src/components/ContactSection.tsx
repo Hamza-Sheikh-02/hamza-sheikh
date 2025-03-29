@@ -81,10 +81,10 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="animate-slide-in-from-left">
-            <h3 className="text-2xl font-semibold mb-6">Let's Talk</h3>
+            <h3 className="text-2xl font-semibold mb-6">Let&apos;s Talk</h3>
             <p className="text-foreground/70 mb-8">
               Whether you have a project in mind or just want to chat, feel free
-              to reach out. I'm always open to discussing new projects, creative
+              to reach out. I&apos;m always open to discussing new projects, creative
               ideas, or opportunities to be part of your vision.
             </p>
 
