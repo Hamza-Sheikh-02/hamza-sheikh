@@ -18,12 +18,6 @@ const UPDATE_TOAST = "UPDATE_TOAST" as const;
 const DISMISS_TOAST = "DISMISS_TOAST" as const;
 const REMOVE_TOAST = "REMOVE_TOAST" as const;
 
-type ActionType =
-  | typeof ADD_TOAST
-  | typeof UPDATE_TOAST
-  | typeof DISMISS_TOAST
-  | typeof REMOVE_TOAST;
-
 let count = 0;
 
 function genId() {
@@ -56,15 +50,13 @@ interface State {
 const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>();
 
 const addToRemoveQueue = (toastId: string) => {
-  if (toastTimeouts.has(toastId)) {
-    return;
-  }
+  if (toastTimeouts.has(toastId)) return;
 
   const timeout = setTimeout(() => {
     toastTimeouts.delete(toastId);
     dispatch({
       type: REMOVE_TOAST,
-      toastId: toastId,
+      toastId,
     });
   }, TOAST_REMOVE_DELAY);
 
@@ -101,12 +93,7 @@ export const reducer = (state: State, action: Action): State => {
       return {
         ...state,
         toasts: state.toasts.map((t) =>
-          t.id === toastId || toastId === undefined
-            ? {
-                ...t,
-                open: false,
-              }
-            : t
+          t.id === toastId || toastId === undefined ? { ...t, open: false } : t
         ),
       };
     }
@@ -162,7 +149,7 @@ function toast({ ...props }: Toast) {
   });
 
   return {
-    id: id,
+    id,
     dismiss,
     update,
   };
