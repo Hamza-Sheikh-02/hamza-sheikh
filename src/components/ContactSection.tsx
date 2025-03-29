@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { sendContactEmail } from "@/utils/emailService";
+import Link from "next/link";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -95,12 +96,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-foreground/80 font-medium">Email</h4>
-                  <a
+                  <Link
                     href="mailto:example@example.com"
                     className="text-primary hover:underline"
                   >
-                    example@example.com
-                  </a>
+                    hamzahamza.sheikh2009@gmail.com
+                  </Link>
                 </div>
               </div>
 
@@ -110,12 +111,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-foreground/80 font-medium">Phone</h4>
-                  <a
-                    href="tel:+1234567890"
+                  <Link
+                    href="tel:+923278237097"
                     className="text-primary hover:underline"
                   >
-                    +1 (234) 567-890
-                  </a>
+                    +92 327 8237097
+                  </Link>
                 </div>
               </div>
 
