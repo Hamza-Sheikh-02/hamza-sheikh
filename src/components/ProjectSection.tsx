@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Maximize2, X } from "lucide-react";
+import { ExternalLink, Github, Maximize2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -18,6 +18,8 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -68,7 +70,7 @@ const ProjectsSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -102,24 +104,16 @@ const ProjectsSection = () => {
 
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={project.githubLink} target="_blank">
                     <Github size={16} className="mr-2" />
                     Code
-                  </a>
+                  </Link>
                 </Button>
                 <Button size="sm" asChild>
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={project.demoLink} target="_blank">
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
-                  </a>
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -157,24 +151,16 @@ const ProjectsSection = () => {
             </div>
             <div className="flex justify-between mt-4">
               <Button variant="outline" asChild>
-                <a
-                  href={selectedProject.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link href={selectedProject.githubLink} target="_blank">
                   <Github size={16} className="mr-2" />
                   View Code
-                </a>
+                </Link>
               </Button>
               <Button asChild>
-                <a
-                  href={selectedProject.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link href={selectedProject.demoLink} target="_blank">
                   <ExternalLink size={16} className="mr-2" />
                   View Live Demo
-                </a>
+                </Link>
               </Button>
             </div>
           </DialogContent>
