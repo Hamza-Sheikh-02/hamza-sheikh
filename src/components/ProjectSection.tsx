@@ -135,9 +135,11 @@ const ProjectsSection = () => {
               </DialogTitle>
             </DialogHeader>
             <div className="relative h-56 sm:h-64 overflow-hidden rounded-md">
-              <img
+              <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
               />
             </div>
