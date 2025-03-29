@@ -73,6 +73,8 @@ const ProjectsSection = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
                 <div className="absolute top-2 right-2">
