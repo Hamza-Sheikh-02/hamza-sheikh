@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Instagram, Github, Linkedin, Mail } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -20,6 +20,14 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-6">
+            <Link
+              href="https://www.instagram.com/hamz_asheikh02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-primary transition-colors"
+            >
+              <Instagram size={20} />
+            </Link>
             <Link
               href="https://github.com/Hamza-Sheikh-02"
               target="_blank"
