@@ -24,6 +24,19 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
+    title: "Surmount",
+    description:
+      "A frontend design using Next.js Shadcn UI/",
+    longDescription:
+      "This comprehensive e-commerce solution features product listings, search functionality, cart management, secure checkout, and user accounts. It uses Next.js for the frontend, Sanity for the content management, and Clerk for authentication. The admin dashboard allows for easy product and order management.",
+    image: "/surmount.png",
+    tags: ["Next.js", "Shadcn", "TypeScript", "Tailwind CSS"],
+    demoLink: "https://surmount-one.vercel.app/",
+    githubLink:
+      "https://github.com/Hamza-Sheikh-02/surmount",
+  },
+  {
+    id: 2,
     title: "Avion",
     description:
       "A full-featured e-commerce platform built with Next.js, Sanity, and Clerk authentication.",
@@ -36,7 +49,7 @@ const projects = [
       "https://github.com/Hamza-Sheikh-02/marketplace-builder-hackathon",
   },
   {
-    id: 2,
+    id: 3,
     title: "Sole Arcade",
     description:
       "A headless CMS built with Sanity, Next.js, and TypeScript for modern content workflows.",
@@ -46,6 +59,18 @@ const projects = [
     tags: ["Sanity", "Next.js", "TypeScript", "shadcn/ui"],
     demoLink: "https://sole-arcade-02.vercel.app/",
     githubLink: "https://github.com/Hamza-Sheikh-02/sole-arcade",
+  },
+  {
+    id: 4,
+    title: "Pizza House",
+    description:
+      "A headless CMS built with Sanity, Next.js, and TypeScript for modern content workflows.",
+    longDescription:
+      "This custom CMS provides an intuitive interface for managing diverse content types. Built with Sanity as the content backend and Next.js for the presentation layer, it offers real-time collaboration, content versioning, and a customizable publishing workflow. The TypeScript implementation ensures type safety throughout the application.",
+    image: "/pizza-house.png",
+    tags: ["Sanity", "Next.js", "TypeScript", "shadcn/ui"],
+    demoLink: "https://pizza-house-02.vercel.app/",
+    githubLink: "https://github.com/Hamza-Sheikh-02/pizza-house",
   },
 ];
 
